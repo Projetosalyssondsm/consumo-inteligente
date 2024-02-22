@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>casa inteligente</title>
+   
+</head>
+<body>
+    <div class="game-board">
+        <img class="img01" src="_imgcasainteligente/1.png">
+        <img class="img02" src="_imgcasainteligente/2.png">
+        <img class="img03" src="_imgcasainteligente/3.png">
+        <img class="img04" src="_imgcasainteligente/4.png">
+        <img class="img05" src="_imgcasainteligente/5.png">
+        <img class="img06" src="_imgcasainteligente/6.png">
+        <img class="img07" src="_imgcasainteligente/7.png">
+        <img class="img08" src="_imgcasainteligente/8.png">
+        <img class="img09" src="_imgcasainteligente/9.png">
+    </div>
+
+    <div>
+        <img class="lampada-acesa" src="_img/lampada-acesa.jpg"> 
+        <img class="lampada-apagada" src="_img/lampada-apagada.jpg">   
+    </div>
+    
+    <div>
+        <script>
+            var acende = false;
+            function mudaLampada(tipo){
+                if(tipo == 1){
+                    arquivo ="_img/lampada-acesa.jpg";
+                    document.getElementById("deus").style.color= "#000000";
+                }
+    
+                if(tipo == 2){
+                    arquivo ="_img/lampada-apagada.jpg";
+                    document.getElementById("deus").style.color= "#ffff";
+                }
+                
+                if(tipo == 3){
+                    arquivo ="_img/lampada-acesa.jpg";
+                    document.getElementById("deus").style.color= "#ffff";
+                }
+    
+                if (!acende){
+                    document.getElementById("luz").src =arquivo;
+                    if(tipo == 3){
+                        acende =  true;
+                    }
+                }
+                if(acende) {
+                    arquivo ="_img/lampada-apagada.jpg";
+                    if(tipo== 4)
+                    acende = false;
+                }
+                if (tipo==4) {
+                    alert("você a concertou a lampada");
+                }
+    
+            }
+        
+       
+        </script>
+    </div>    
+
+  
+</body>
+</html>
+
+  <!--     <h1>Acenda a lampada</h1>
+    <img src="_img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(1)" ondblclick="mudaLampada(2)"/>
+
+    <p id="deus">  DEUS ESTA EM TUDO. </p>
+
+    <script>
+        var acende = false;
+        function mudaLampada(tipo){
+            if(tipo == 1){
+                arquivo ="_img/lampada-acesa.jpg";
+                document.getElementById("deus").style.color= "#000000";
+            }
+
+            if(tipo == 2){
+                arquivo ="_img/lampada-apagada.jpg";
+                document.getElementById("deus").style.color= "#ffff";
+            }
+            
+            if(tipo == 3){
+                arquivo ="_img/lampada-acesa.jpg";
+                document.getElementById("deus").style.color= "#ffff";
+            }
+
+            if (!acende){
+                document.getElementById("luz").src =arquivo;
+                if(tipo == 3){
+                    acende =  true;
+                }
+            }
+            if(acende) {
+                arquivo ="_img/lampada-apagada.jpg";
+                if(tipo== 4)
+                acende = false;
+            }
+            if (tipo==4) {
+                alert("você a concertou a lampada");
+            }
+
+        }
+    
+   
+    </script>
+    
+    -->
