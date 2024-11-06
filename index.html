@@ -1,115 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="js.js"></script>
+
     <title>casa inteligente</title>
-   
+
+    </div>
 </head>
-<body>
+<!--imagem da casa--------------------------------------------------------------------------------------------------------------------------------->
+<body class=" dark-mode">
     <div class="game-board">
-        <img class="img01" src="_imgcasainteligente/1.png">
-        <img class="img02" src="_imgcasainteligente/2.png">
-        <img class="img03" src="_imgcasainteligente/3.png">
-        <img class="img04" src="_imgcasainteligente/4.png">
-        <img class="img05" src="_imgcasainteligente/5.png">
-        <img class="img06" src="_imgcasainteligente/6.png">
-        <img class="img07" src="_imgcasainteligente/7.png">
-        <img class="img08" src="_imgcasainteligente/8.png">
-        <img class="img09" src="_imgcasainteligente/9.png">
-    </div>
+        <img src="_imgcasainteligente/1.png" class="img01" id="img01">
+        <img src="_imgcasainteligente/2.png" class="img02" id="img02">
+        <img src="_imgcasainteligente/3.png" class="img03" id="img03">
+        <img src="_imgcasainteligente/4.png" class="img04" id="img04">
+        <img src="_imgcasainteligente/5.png" class="img05" id="img05">
+        <img src="_imgcasainteligente/6.png" class="img06" id="img06">
+        <img src="_imgcasainteligente/7.png" class="img07" id="img07">
+        <img src="_imgcasainteligente/8.png" class="img08" id="img08">
 
-    <div>
-        <img class="lampada-acesa" src="_img/lampada-acesa.jpg"> 
-        <img class="lampada-apagada" src="_img/lampada-apagada.jpg">   
     </div>
-    
+    <!--eletrodomesticos ------------------------------------------------------------------------------------------------------------------------->
     <div>
-        <script>
-            var acende = false;
-            function mudaLampada(tipo){
-                if(tipo == 1){
-                    arquivo ="_img/lampada-acesa.jpg";
-                    document.getElementById("deus").style.color= "#000000";
-                }
-    
-                if(tipo == 2){
-                    arquivo ="_img/lampada-apagada.jpg";
-                    document.getElementById("deus").style.color= "#ffff";
-                }
+        <div class="tooltip">
+            <img src="_img/geladeira.png" class="eletro-domestico01" id="geladeira"
+                onclick="ligarEletro(1, 'geladeira','Geladeira','01','24','40','28,36')" ondblclick="ligarEletro(2, 'geladeira')"/>
+            <span class="tooltiptext">
+                <img src="_img/geladeira real.webp" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/tv.png" class="eletro-domestico02" id="tv" 
+            onclick="ligarEletro(1, 'tv','TV01','01','4','13,20','9,36')"ondblclick="ligarEletro(2, 'tv')" />
+
+            <span class="tooltiptext">
+
+                <img src="_img/tv real.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/tv2.png" class="eletro-domestico03" id="tv2" 
+            onclick="ligarEletro(1, 'tv2','TV02','01','4','13,20','9,36')" ondblclick="ligarEletro(2, 'tv2')"/>
+
+            <span class="tooltiptext">
+                <img src="_img/tv real.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/tv2.png" class="eletro-domestico04" id="tv3" 
+            onclick="ligarEletro(1, 'tv3','TV03','01','4','13,20','9,36')" ondblclick="ligarEletro(2, 'tv3')"/>
+
+            <span class="tooltiptext">
+                <img src="_img/tv real.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/arcondicionado.png" class="eletro-domestico05" id="ar" 
+            onclick="ligarEletro(1, 'ar','Ar01','01','9','216','153,15')" ondblclick="ligarEletro(2, 'ar')"/>
+            <span class="tooltiptext">
+                <img src="_img/arcondicionado real x.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/arcondicionado.png" class="eletro-domestico06" id="ar2" 
+            onclick="ligarEletro(1, 'ar2','Ar02','01','9','216','153,15')" ondblclick="ligarEletro(2, 'ar2')" />
+            <span class="tooltiptext">
+                <img src="_img/arcondicionado real x.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/arcondicionado.png" class="eletro-domestico07" id="ar3" 
+            onclick="ligarEletro(1, 'ar3','Ar03','01','9','216','153,15')" ondblclick="ligarEletro(2, 'ar3')" />
+            <span class="tooltiptext">
+                <img src="_img/arcondicionado real x.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/microondas.png" class="eletro-domestico08" id="micro" 
+            onclick="ligarEletro(1, 'micro','micro-ondas','01','14','14','9,26')" ondblclick="ligarEletro(2, 'micro')" />
+            <span class="tooltiptext">
+                <img src="_img/microndas real.jpg" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <span class="tooltiptext">
+                <img src="" alt=" essa imagem">
+            </span>
+        </div>
+
+
+
+
+    </div>
+<!-- lampadas--------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div>
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada01" id="lampada01"
+                onclick="mudaLampada(1, 'lampada01', 'img08', 'lampada01','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada01','img08')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada02" id="lampada02"
+                onclick="mudaLampada(1, 'lampada02','img07','lampada02','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada02','img07')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada03" id="lampada03"
+                onclick="mudaLampada(1, 'lampada03','img06','lampada03','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada03','img06')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada04" id="lampada04"
+                onclick="mudaLampada(1, 'lampada04','img05','lampada04','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada04','img05')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada05" id="lampada05"
+                onclick="mudaLampada(1, 'lampada05','img04','lampada05','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada05','img04')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada06" id="lampada06"
+                onclick="mudaLampada(1, 'lampada06','img03','lampada06','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada06','img03')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada07" id="lampada07"
+                onclick="mudaLampada(1, 'lampada07','img02','lampada07','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada07','img02')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+        <div class="tooltip">
+            <img src="_img/lampada-apagadaok.jpg" class="lampada-apagada08" id="lampada08"
+                onclick="mudaLampada(1, 'lampada08','img01','lampada08','01','08','14.4','10,21')" ondblclick="mudaLampada(2, 'lampada08','img01')" />
+            <span class="tooltiptext">
+                <img src="_img/lampada-apagada para o tooltip.png" alt=" essa imagem">
+            </span>
+        </div>
+
+<!--tabela----------------------------------------------------------------------------------------------------------------------------------------------->
+        <div>
+            <table id="tabela" class="tabela">
+              <thead id="thead">
+                  <th>eletrodomestico</th>
+                  <th>quantidade</th>
+                  <th>uso diario</th>
+                  <th>KWh/Mês</th>
+                  <th>Custo/Mês</th>
+                  <th>Excluir</th>
+              </thead>
+              <tbody id="tabelacorpo">
                 
-                if(tipo == 3){
-                    arquivo ="_img/lampada-acesa.jpg";
-                    document.getElementById("deus").style.color= "#ffff";
-                }
-    
-                if (!acende){
-                    document.getElementById("luz").src =arquivo;
-                    if(tipo == 3){
-                        acende =  true;
-                    }
-                }
-                if(acende) {
-                    arquivo ="_img/lampada-apagada.jpg";
-                    if(tipo== 4)
-                    acende = false;
-                }
-                if (tipo==4) {
-                    alert("você a concertou a lampada");
-                }
-    
-            }
-        
-       
-        </script>
-    </div>    
 
-  
+              </tbody>
+                  <tfoot id="foot">
+                      <td>saldo</td>
+                      <td> </td>
+                      <td> </td>
+                      <td>saldo whk</td>
+                      <td>saldo </td>
+                      <td></td>  
+                  </tfoot>
+           </table>     
+          </div> 
+
+    </div>
+
+   
+
+
+
 </body>
+
 </html>
 
-  <!--     <h1>Acenda a lampada</h1>
-    <img src="_img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(1)" ondblclick="mudaLampada(2)"/>
-
-    <p id="deus">  DEUS ESTA EM TUDO. </p>
-
-    <script>
-        var acende = false;
-        function mudaLampada(tipo){
-            if(tipo == 1){
-                arquivo ="_img/lampada-acesa.jpg";
-                document.getElementById("deus").style.color= "#000000";
-            }
-
-            if(tipo == 2){
-                arquivo ="_img/lampada-apagada.jpg";
-                document.getElementById("deus").style.color= "#ffff";
-            }
-            
-            if(tipo == 3){
-                arquivo ="_img/lampada-acesa.jpg";
-                document.getElementById("deus").style.color= "#ffff";
-            }
-
-            if (!acende){
-                document.getElementById("luz").src =arquivo;
-                if(tipo == 3){
-                    acende =  true;
-                }
-            }
-            if(acende) {
-                arquivo ="_img/lampada-apagada.jpg";
-                if(tipo== 4)
-                acende = false;
-            }
-            if (tipo==4) {
-                alert("você a concertou a lampada");
-            }
-
-        }
-    
-   
-    </script>
-    
-    -->
+<!--<img src="_img/lampada-apagada01ok.jpg" class="lampada-apagada01" id="lampada00" onclick="mudaLampada(1)" ondblclick="mudaLampada(2)"/> -->

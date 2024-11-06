@@ -1,4 +1,4 @@
-*{margin:0;
+*{margin: 0;
 padding:0;
 box-sizing: border-box;
 }
@@ -15,76 +15,386 @@ box-sizing: border-box;
 
 .img01{
     position: absolute;
-    width: 800px;
-    left: 1500px;  
+    width: 190px;
+    left: 1010px;        
+    bottom: 420px;
     filter:sepia(90%);
 }
 
 .img02{
     position: absolute;
-    width: 800px;
-    left: 1500px;    
+    width: 210px;
+    left: 1002px;    
+    bottom: 310px;
     filter:sepia(90%)
 }
 
 .img03{
     position: absolute;
-    width: 800px;
-    left: 1500px;
+    width: 243px;
+    left: 967px;
+    bottom: 173px;
     filter:sepia(90%)
 } 
 
 
 .img04{
     position: absolute;
-    width: 900px;
-    left: 2270px; 
-    bottom: 518px;
+    width: 300px;
+    left: 757px; 
+    bottom: 173px;
+    filter:sepia(90%)
+}
+
+
+.img06{
+    position: absolute;
+    width: 300px;
+    left: 513px;
+    bottom: 181px;
+    filter:sepia(90%);
+}
+.img07{
+    position: absolute;
+    width: 291px;
+    left: 426px;    
+    bottom: 300px;
+    filter:sepia(90%);
+    z-index: 0,9;
+}
+
+.img08{
+    position: absolute;
+    width: 367px;
+    left: 167px;
+    bottom: 200px;
     filter:sepia(90%)
 }
 
 .img05{
     position: absolute;
-    width: 900px;
-    left: 1990px;
-    bottom: 900px;
+    width: 410px;
+    left: 657px;
+    bottom: 290px;
     filter:sepia(90%)
 }
 
-.img06{
+.lampada-acesa01{
     position: absolute;
-    width: 900px;
-    left: 1540px;
-    bottom: 545px;
-    filter:sepia(90%)   
+    width: 34px;
+    left: 420px;
+    bottom: 367px;
+    z-index: 1;
 }
-.img07{
+
+.lampada-apagada01{
     position: absolute;
-    width: 900px;
-    left: 1250px;    
-    bottom: 900px;
+    width: 34px;
+    left: 420px;
+    bottom: 367px;
+    z-index: 1;
+}
+
+.lampada-acesa02{
+    position: absolute;
+    width: 34px;
+    left: 653px;
+    bottom: 390px;
+    z-index: 1;
+}
+
+
+.lampada-apagada02{
+    position: absolute;
+    width: 34px;
+    left: 653px;
+    bottom: 390px;
+    z-index: 1;
+}
+
+.lampada-acesa03{
+    position: absolute;
+    width: 34px;
+    left: 783px;
+    bottom: 210px;
+    z-index: 1;
+}
+
+
+.lampada-apagada03  {
+    position: absolute;
+    width: 34px;
+    left: 783px;
+    bottom: 210px;
+    z-index: 1;
+}    
+
+.lampada-acesa04{
+    position: absolute;
+    width: 34px;
+    left: 1003px;
+    bottom: 350px;
+    z-index: 1;
+}
+
+
+.lampada-apagada04  {
+    position: absolute;
+    width: 34px;
+    left: 1003px;
+    bottom: 350px;
+    z-index: 1;
+}    
+
+.lampada-acesa05{
+    position: absolute;
+    width: 34px;
+    left: 980px;
+    bottom: 207px;
+    z-index: 1;
+}
+
+
+.lampada-apagada05  {
+    position: absolute;
+    width: 34px;
+    left: 980px;
+    bottom: 207px;
+    z-index: 1;
+}
+
+.lampada-acesa06{
+    position: absolute;
+    width: 34px;
+    left: 1157px;
+    bottom: 203px;
+    z-index: 1;
+}
+
+
+.lampada-apagada06 {
+    position: absolute;
+    width: 34px;
+    left: 1157px;
+    bottom: 203px;
+    z-index: 1;
+}
+
+.lampada-acesa07{
+    position: absolute;
+    width: 34px;
+    left: 1160px;
+    bottom: 300px;
+    z-index: 1;
+}
+
+
+.lampada-apagada07 {
+    position: absolute;
+    width: 34px;
+    left: 1160px;
+    bottom: 300px;
+    z-index: 1;
+}
+
+.lampada-acesa08{
+    position: absolute;
+    width: 34px;
+    left: 1160px;
+    bottom: 420px;
+    z-index: 1;
+}
+
+
+.lampada-apagada08{
+    position: absolute;
+    width: 34px;
+    left: 1160px;
+    bottom: 420px;
+    z-index: 1;
+}
+
+.eletro-domestico01{
+    position: absolute;
+    width: 50px;
+    left: 883px;
+    bottom: 460px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
     filter:sepia(90%)
+}
+
+.eletro-domestico02{
+    position: absolute;
+    width: 25px;
+    left: 1013px;
+    bottom: 210px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;    
+}
+
+.eletro-domestico03{
+    position: absolute;
+    width: 67px;
+    left: 633px;
+    bottom: 210px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;
 
 }
 
-.img08{
+.eletro-domestico04{
     position: absolute;
-    width: 1100px;
-    left: 500px;
-    bottom: 600px;
-    filter:sepia(90%)
+    width: 67px;
+    left: 1067px;
+    bottom: 303px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;
+
 }
 
-.lampada-acesa{
+.eletro-domestico05{
     position: absolute;
-    width: 100px;
-    left: 500px;
-    bottom: 600px;
+    width: 67px;
+    left: 633px;
+    bottom: 310px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;
+
 }
 
-.lampada-apagada{
+.eletro-domestico06{
     position: absolute;
-    width: 100px;
-    left: 500px;
-    bottom: 600px;
+    width: 67px;
+    left: 1067px;
+    bottom: 273px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;
+
+}
+
+.eletro-domestico07{
+    position: absolute;
+    width: 67px;
+    left: 1067px;
+    bottom: 397px;
+    border-color: rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;
+
+}
+
+.eletro-domestico08{
+    position: absolute;
+    width: 57px;
+    left: 707px;
+    bottom: 467px;
+    border-color:rgb(2, 255, 255);
+    border-width: 03px;
+    border-style: solid;
+    filter:sepia(90%);
+    z-index: 1;
+
+}
+
+/* Estilo para o texto do tooltip */
+
+.tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: none;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 467px;
+    left: 1013px;
+    margin-left: 60px; /* Use metade da largura do tooltip para centralizá-lo */
+    opacity: 0;
+    transition: opacity 3.5s;
+    border-color:aliceblue;
+    border-width: 03px;
+    border-style:outset;
+}
+
+/* Estilo para o tooltip */
+.tooltip {
+    /*position: relative;*/
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+/* Estilo para exibir o tooltip ao passar o mouse */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilo para a imagem dentro do tooltip */
+.tooltiptext img {
+    width: 100%;
+    height: 50%;
+}
+
+/* Estilo para a tabela */
+
+.tr-lampada-acesa01{ 
+    visibility: none;}
+
+/*tabela*/
+
+.td{
+    text-align: center;
+    border-top: #000000 solid 2px;  
+    border-collapse: collapse;  
+}
+
+.tabela{
+visibility: none;
+top:82%;
+left: 50%;
+border: solid 2px #000000;
+position: absolute;
+padding: 5px 2px 5px 2px;   
+font-weight: bold;
+padding: 2px;
+
+}
+
+#thead{
+    border: solid 03px #000000;
+    background-color: #b5b5b5;
+    color: #000000;
+}    
+#foot{
+    font-weight: bold;
+    border: solid 03px #000000;
+    background-color: #b5b5b5;    
+}
+ .tabelacorpo{
+    
+    padding: 2px;
+    
 }
